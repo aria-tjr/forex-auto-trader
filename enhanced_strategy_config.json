@@ -1,0 +1,100 @@
+{
+    "strategy_name": "Enhanced Robust Crypto Strategy",
+    "version": "2.0.0",
+    "description": "Professional crypto trading strategy with all critical weak points resolved",
+    
+    "trading_parameters": {
+        "base_currency": "USDT",
+        "symbols": [
+            "BTCUSDT", "ETHUSDT", "ADAUSDT", "DOTUSDT", 
+            "LINKUSDT", "MATICUSDT", "SOLUSDT", "AVAXUSDT"
+        ],
+        "timeframe": "15m",
+        "max_positions": 3,
+        "position_size_pct": 0.02,
+        "max_portfolio_risk": 0.06
+    },
+    
+    "technical_indicators": {
+        "ema_settings": {
+            "fast_period": 12,
+            "slow_period": 26,
+            "trend_period": 50,
+            "comment": "Standard EMA periods - not optimized to prevent overfitting"
+        },
+        "rsi_settings": {
+            "period": 14,
+            "overbought": 70,
+            "oversold": 30,
+            "trend_overbought": 60,
+            "trend_oversold": 40,
+            "comment": "Classic RSI parameters - industry standard"
+        },
+        "bollinger_bands": {
+            "period": 20,
+            "std_deviation": 2.0,
+            "comment": "Standard BB settings - widely used parameters"
+        }
+    },
+    
+    "risk_management": {
+        "stop_loss_pct": 0.025,
+        "take_profit_pct": 0.05,
+        "min_risk_reward_ratio": 1.5,
+        "max_daily_loss_pct": 0.08,
+        "trailing_stop_enabled": true,
+        "trailing_stop_pct": 0.015
+    },
+    
+    "execution_costs": {
+        "maker_fee": 0.001,
+        "taker_fee": 0.001,
+        "slippage_small_order": 0.0005,
+        "slippage_medium_order": 0.001,
+        "slippage_large_order": 0.002,
+        "spread_cost": 0.0002,
+        "network_fee": 0.0005,
+        "emergency_exit_cost": 0.005,
+        "comment": "Realistic crypto trading costs based on major exchanges"
+    },
+    
+    "market_regime_detection": {
+        "stability_periods": 10,
+        "volatility_threshold_low": 0.01,
+        "volatility_threshold_high": 0.08,
+        "trend_strength_threshold": 0.6,
+        "volume_confirmation": true,
+        "comment": "Stable regime detection to prevent excessive switching"
+    },
+    
+    "signal_filtering": {
+        "min_signal_strength": 0.7,
+        "signal_cooldown_periods": 5,
+        "volume_filter_enabled": true,
+        "min_volume_ratio": 1.2,
+        "confluence_required": 3,
+        "comment": "High-quality signals only to improve win rate"
+    },
+    
+    "backtesting_settings": {
+        "include_crash_periods": true,
+        "stress_test_scenarios": [
+            "crypto_winter_2018",
+            "covid_crash_2020", 
+            "luna_collapse_2022",
+            "ftx_collapse_2022"
+        ],
+        "min_trades_for_significance": 100,
+        "confidence_level": 0.95,
+        "monte_carlo_runs": 1000,
+        "walk_forward_enabled": true
+    },
+    
+    "bias_prevention": {
+        "look_ahead_protection": true,
+        "survivorship_bias_mitigation": true,
+        "data_snooping_protection": true,
+        "overfitting_prevention": true,
+        "realistic_execution_modeling": true
+    }
+} 

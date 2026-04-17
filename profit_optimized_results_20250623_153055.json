@@ -1,0 +1,112 @@
+{
+  "final_balance": 10088.003013538533,
+  "total_return": 0.00880030135385332,
+  "annual_return": 0.004390512377458355,
+  "monthly_return": 0.00036587603145486297,
+  "total_trades": 17,
+  "win_rate": 0.47058823529411764,
+  "target_15_achieved": "False",
+  "improvement_vs_baseline": -0.07360948762254164,
+  "sample_trades": [
+    {
+      "entry_time": "2025-06-23 15:30:51.492296",
+      "exit_time": "2025-06-23 15:30:51.492356",
+      "direction": "SELL",
+      "gross_return": -0.029242589465359226,
+      "net_pnl": -11.918055543201948,
+      "exit_reason": "Stop Loss",
+      "regime": "DOWNTREND",
+      "signal_quality": 0.7601764121579836
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.492402",
+      "exit_time": "2025-06-23 15:30:51.492432",
+      "direction": "BUY",
+      "gross_return": -0.029721896904333158,
+      "net_pnl": -8.776583927335702,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "signal_quality": 0.7050000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.492440",
+      "exit_time": "2025-06-23 15:30:51.492617",
+      "direction": "SELL",
+      "gross_return": 0.08482989123810879,
+      "net_pnl": 31.12491757610473,
+      "exit_reason": "Take Profit",
+      "regime": "DOWNTREND",
+      "signal_quality": 0.8150000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.492617",
+      "exit_time": "2025-06-23 15:30:51.492825",
+      "direction": "SELL",
+      "gross_return": 0.009742713099642067,
+      "net_pnl": 2.5726656638584293,
+      "exit_reason": "Time Exit",
+      "regime": "DOWNTREND",
+      "signal_quality": 0.8150000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.492862",
+      "exit_time": "2025-06-23 15:30:51.492957",
+      "direction": "BUY",
+      "gross_return": 0.08381110322456535,
+      "net_pnl": 21.729029075507114,
+      "exit_reason": "Take Profit",
+      "regime": "SIDEWAYS",
+      "signal_quality": 0.7050000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.492973",
+      "exit_time": "2025-06-23 15:30:51.493023",
+      "direction": "BUY",
+      "gross_return": -0.03155450075397505,
+      "net_pnl": -13.869806140864306,
+      "exit_reason": "Stop Loss",
+      "regime": "UPTREND",
+      "signal_quality": 0.8150000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.493043",
+      "exit_time": "2025-06-23 15:30:51.493060",
+      "direction": "SELL",
+      "gross_return": 0.0769351681352623,
+      "net_pnl": 19.89578572081096,
+      "exit_reason": "Take Profit",
+      "regime": "SIDEWAYS",
+      "signal_quality": 0.7050000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.493084",
+      "exit_time": "2025-06-23 15:30:51.493259",
+      "direction": "SELL",
+      "gross_return": -0.03441757491287647,
+      "net_pnl": -14.319836482422579,
+      "exit_reason": "Stop Loss",
+      "regime": "DOWNTREND",
+      "signal_quality": 0.8150000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.493259",
+      "exit_time": "2025-06-23 15:30:51.493331",
+      "direction": "BUY",
+      "gross_return": -0.030910188309614766,
+      "net_pnl": -9.130232157159563,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "signal_quality": 0.7050000000000001
+    },
+    {
+      "entry_time": "2025-06-23 15:30:51.493368",
+      "exit_time": "2025-06-23 15:30:51.493397",
+      "direction": "BUY",
+      "gross_return": 0.07460206437872223,
+      "net_pnl": 28.69039695985106,
+      "exit_reason": "Take Profit",
+      "regime": "UPTREND",
+      "signal_quality": 0.8167470291039693
+    }
+  ]
+}

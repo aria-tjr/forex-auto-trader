@@ -1,0 +1,53 @@
+{
+  "strategy_type": "practical_profit_enhancement",
+  "final_balance": 9975.485166933724,
+  "total_return": -0.002451483306627597,
+  "annual_return": -0.002451483306627597,
+  "monthly_return": -0.00020429027555229974,
+  "total_trades": 3,
+  "win_rate": 0.0,
+  "profit_factor": 0.0,
+  "max_drawdown": 0.002451483306627597,
+  "baseline_annual": 0.078,
+  "improvement_factor": 0,
+  "target_15_achieved": "False",
+  "target_20_achieved": "False",
+  "enhancements_applied": [
+    "increased_position_sizing_2.5pct",
+    "reduced_cooldown_8h",
+    "enhanced_profit_taking",
+    "maintained_risk_protections"
+  ],
+  "exit_reason_breakdown": {
+    "Stop Loss": 3
+  },
+  "sample_trades": [
+    {
+      "direction": "BUY",
+      "gross_return": -0.035465342645584416,
+      "net_pnl": -9.616335661396104,
+      "exit_reason": "Stop Loss",
+      "hours_held": 2,
+      "position_size_pct": 2.502406397988428,
+      "stress_period": false
+    },
+    {
+      "direction": "SELL",
+      "gross_return": -0.025974397163171598,
+      "net_pnl": -7.236633602575209,
+      "exit_reason": "Stop Loss",
+      "hours_held": 7,
+      "position_size_pct": 2.5018122125168287,
+      "stress_period": false
+    },
+    {
+      "direction": "BUY",
+      "gross_return": -0.027699192463918033,
+      "net_pnl": -7.66186380230393,
+      "exit_reason": "Stop Loss",
+      "hours_held": 7,
+      "position_size_pct": 2.5019201732231786,
+      "stress_period": false
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "test_summary": {
+    "test_years": 2,
+    "test_days": 730,
+    "timeframes_tested": [
+      "5m",
+      "15m",
+      "30m",
+      "1h"
+    ],
+    "sensitivity_levels": [
+      "conservative",
+      "balanced",
+      "aggressive",
+      "very_aggressive"
+    ],
+    "target_trades": 100
+  },
+  "results_by_timeframe": {
+    "5m": {
+      "conservative": {
+        "timeframe": "5m",
+        "sensitivity": "conservative",
+        "test_period_days": 365,
+        "data_points": 210240,
+        "final_balance": 9990.95147020689,
+        "total_return": -0.0009048529793109992,
+        "annual_return": -0.0009048529793109772,
+        "max_drawdown": 0.0009594265930965776,
+        "sharpe_ratio": -13.013665532536049,
+        "total_trades": 5,
+        "win_rate": 0.2,
+        "profit_factor": 0.22768319703436693,
+        "avg_win": 0.002731301172257493,
+        "avg_loss": 0.011996059471376913,
+        "avg_total_cost": 0.005599999999999999,
+        "signals_generated": 8,
+        "signal_to_trade_ratio": 0.625,
+        "regime_changes": 0,
+        "regime_changes_per_day": 0.0,
+        "cycle_performance": {
+          "flash_crash": {
+            "trades": 4,
+            "avg_return": -0.003912214721504123,
+            "win_rate": 0.25,
+            "total_return": -0.01564885888601649
+          },
+          "sideways": {
+            "trades": 1,
+            "avg_return": -0.02960407782723367,
+            "win_rate": 0.0,
+            "total_return": -0.02960407782723367
+          }
+        },
+        "statistical_significance": {
+          "sufficient_trades": false,
+          "high_confidence": false,
+          "confidence_level": "LOW",
+          "trades_for_significance": 100,
+          "trades_for_high_confidence": 200
+        },
+        "trades_data": [
+          {
+            "entry_time": 

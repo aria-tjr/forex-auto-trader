@@ -1,0 +1,97 @@
+{
+  "final_balance": -1678481.9971257239,
+  "total_return": -168.84819971257238,
+  "annual_return": -168.84819971257238,
+  "monthly_return": -14.070683309381032,
+  "compound_growth_factor": -167.84819971257238,
+  "max_compound_multiplier_used": 1.0,
+  "best_monthly_return": -168.84819971257238,
+  "worst_monthly_return": -168.84819971257238,
+  "monthly_volatility": 2.842170943040401e-14,
+  "total_trades": 1,
+  "winning_trades": 0,
+  "losing_trades": 1,
+  "win_rate": 0.0,
+  "profit_factor": 0.0,
+  "avg_win": 0,
+  "avg_loss": -844046.6450420249,
+  "max_drawdown": 168.84819971257238,
+  "volatility": 168.8475625291166,
+  "sharpe_ratio": -1.0000037737201901,
+  "target_achievements": {
+    "annual_15_pct": false,
+    "annual_20_pct": false,
+    "annual_25_pct": false,
+    "annual_30_pct": false,
+    "monthly_1_pct": false,
+    "monthly_2_pct": false,
+    "monthly_3_pct": false
+  },
+  "regime_performance": {
+    "UPTREND": {
+      "trades": 1,
+      "total_pnl": -844046.6450420249,
+      "wins": 0
+    }
+  },
+  "sample_trades": [
+    {
+      "entry_time": 61,
+      "entry_price": 32611.187578927995,
+      "direction": "BUY",
+      "position_size": 16499.999999999996,
+      "stop_loss_price": 31958.963827349435,
+      "take_profit_price": 33752.57914419047,
+      "regime": "UPTREND",
+      "signal_strength": 0.6666666666666666,
+      "compound_multiplier": 1.0,
+      "entry_cost": 860935.3520836988,
+      "status": "CLOSED",
+      "exit_time": 63,
+      "exit_price": 31958.963827349435,
+      "exit_reason": "Stop Loss",
+      "gross_return": -0.020000000000000004,
+      "gross_pnl": -330.0,
+      "net_pnl": -844046.6450420249,
+      "total_cost": 1704651.9971257239
+    }
+  ],
+  "compound_growth_log": [
+    {
+      "month": 7,
+      "balance": -1678481.9971257239,
+      "compound_multiplier": 1.0,
+      "monthly_return": -168.84819971257238
+    },
+    {
+      "month": 8,
+      "balance": -1678481.9971257239,
+      "compound_multiplier": 1.0,
+      "monthly_return": -168.84819971257238
+    },
+    {
+      "month": 9,
+      "balance": -1678481.9971257239,
+      "compound_multiplier": 1.0,
+      "monthly_return": -168.84819971257238
+    },
+    {
+      "month": 10,
+      "balance": -1678481.9971257239,
+      "compound_multiplier": 1.0,
+      "monthly_return": -168.84819971257238
+    },
+    {
+      "month": 11,
+      "balance": -1678481.9971257239,
+      "compound_multiplier": 1.0,
+      "monthly_return": -168.84819971257238
+    },
+    {
+      "month": 12,
+      "balance": -1678481.9971257239,
+      "compound_multiplier": 1.0,
+      "monthly_return": -168.84819971257238
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Crypto Trading Bot Requirements
+
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+
+# Binance API client
+python-binance>=1.0.19
+
+# Alternative crypto exchange clients (optional)
+ccxt>=4.0.0
+
+# Async support for real-time data
+asyncio-mqtt>=0.16.0
+aiofiles>=23.0.0
+websockets>=11.0.2
+
+# Technical analysis
+TA-Lib>=0.4.25
+
+# Notifications (optional)
+python-telegram-bot>=20.7
+
+# Development and testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0 

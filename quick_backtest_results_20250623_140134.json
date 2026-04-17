@@ -1,0 +1,29 @@
+{
+  "summary": {
+    "initial_balance": 10000.0,
+    "final_balance": 8296.453046747542,
+    "total_return": -0.17035469532524586,
+    "annual_return": -0.531117672469388,
+    "max_drawdown": 0.25422075482835355
+  },
+  "trading_metrics": {
+    "total_trades": 73,
+    "winning_trades": 23,
+    "losing_trades": 50,
+    "win_rate": 0.3150684931506849,
+    "profit_factor": 0.8235399065240664,
+    "avg_return_per_trade": -0.0036355831813674935
+  },
+  "pnl_metrics": {
+    "total_profit": 6375.800817218215,
+    "total_loss": 7741.945188945006,
+    "net_profit": -1703.5469532524585,
+    "avg_win": 277.2087311834007,
+    "avg_loss": 154.83890377890012
+  },
+  "time_metrics": {
+    "days_traded": 90,
+    "avg_duration_hours": 28.938356187363016,
+    "total_commission": 674.8051630513323
+  }
+}

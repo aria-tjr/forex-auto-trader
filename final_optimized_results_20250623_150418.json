@@ -1,0 +1,111 @@
+{
+  "final_balance": 11611.814085689966,
+  "total_return": 0.16118140856899663,
+  "annual_return": 0.07758127701301332,
+  "total_trades": 595,
+  "win_rate": 0.45546218487394957,
+  "statistical_significance": "HIGH",
+  "professional_standards": "PASS",
+  "trades": [
+    {
+      "entry_time": "2023-06-26 20:04:14.932437",
+      "exit_time": "2023-06-28 20:04:14.932895",
+      "direction": "BUY",
+      "gross_return": 0.05225968776805474,
+      "net_pnl": 27.75581266083284,
+      "exit_reason": "Take Profit",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-06-28 20:04:14.932895",
+      "exit_time": "2023-06-29 12:04:14.933043",
+      "direction": "BUY",
+      "gross_return": -0.04442527430020434,
+      "net_pnl": -30.33914024813346,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-06-29 14:04:14.933061",
+      "exit_time": "2023-06-29 23:04:14.933143",
+      "direction": "SELL",
+      "gross_return": -0.025048409872150502,
+      "net_pnl": -18.62423343046443,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-06-30 19:04:14.933331",
+      "exit_time": "2023-06-30 21:04:14.933349",
+      "direction": "BUY",
+      "gross_return": -0.04227193779072872,
+      "net_pnl": -28.901738870468673,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-07-01 03:04:14.933403",
+      "exit_time": "2023-07-01 05:04:14.933424",
+      "direction": "BUY",
+      "gross_return": -0.05519699565345817,
+      "net_pnl": -36.53420507562741,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-07-01 06:04:14.933434",
+      "exit_time": "2023-07-01 07:04:14.933443",
+      "direction": "SELL",
+      "gross_return": -0.030063001235421005,
+      "net_pnl": -21.450323251659423,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-07-02 00:04:14.933599",
+      "exit_time": "2023-07-02 15:04:14.933740",
+      "direction": "SELL",
+      "gross_return": -0.03908177669283468,
+      "net_pnl": -26.75668230617166,
+      "exit_reason": "Stop Loss",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-07-02 18:04:14.933771",
+      "exit_time": "2023-07-03 03:04:14.933877",
+      "direction": "SELL",
+      "gross_return": 0.061159856830549496,
+      "net_pnl": 32.64961400709551,
+      "exit_reason": "Take Profit",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-07-03 03:04:14.933877",
+      "exit_time": "2023-07-03 05:04:14.933896",
+      "direction": "SELL",
+      "gross_return": 0.05047279395922936,
+      "net_pnl": 26.410966810749077,
+      "exit_reason": "Take Profit",
+      "regime": "SIDEWAYS",
+      "stress_period": true
+    },
+    {
+      "entry_time": "2023-07-04 19:04:14.934247",
+      "exit_time": "2023-07-04 21:04:14.934266",
+      "direction": "SELL",
+      "gross_return": -0.045421665544342314,
+      "net_pnl": -30.619164661593754,
+      "exit_reason": "Stop Loss",
+      "regime": "DOWNTREND",
+      "stress_period": true
+    }
+  ]
+}

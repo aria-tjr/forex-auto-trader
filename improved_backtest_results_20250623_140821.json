@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "initial_balance": 10000.0,
+    "final_balance": 11991.307834638128,
+    "total_return": 0.1991307834638128,
+    "annual_return": 0.7373437756341714,
+    "max_drawdown": 0.08617504134395666,
+    "sharpe_ratio": 3.0961112593846916
+  },
+  "trading_metrics": {
+    "total_trades": 66,
+    "winning_trades": 27,
+    "losing_trades": 39,
+    "win_rate": 0.4090909090909091,
+    "profit_factor": 1.485528291247296,
+    "avg_return_per_trade": 0.008242829149099972
+  },
+  "pnl_metrics": {
+    "total_profit": 6996.660768159798,
+    "total_loss": 4709.880524917626,
+    "net_profit": 1991.307834638128,
+    "avg_win": 259.1355840059184,
+    "avg_loss": 120.76616730558014
+  },
+  "time_metrics": {
+    "days_traded": 120,
+    "avg_duration_hours": 41.45454548838805,
+    "total_commission": 590.9448172080913
+  },
+  "regime_analysis": {
+    "STRONG_DOWNTREND": {
+      "trades": 30,
+      "win_rate": 0.36666666666666664,
+      "total_pnl": 563.2523178213244,
+      "avg_pnl": 18.775077260710813
+    },
+    "STRONG_UPTREND": {
+      "trades": 34,
+      "win_rate": 0.47058823529411764,
+      "total_pnl": 1924.7602798652297,
+      "avg_pnl": 56.6105964666244
+    },
+    "RANGING": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "total_pnl": -201.23235444438365,
+      "avg_pnl": -100.61617722219182
+    }
+  },
+  "improvements": {
+    "market_regime_detection": true,
+    "adaptive_thresholds": true,
+    "signal_quality_filtering": true,
+    "confidence_based_sizing": true
+  }
+}

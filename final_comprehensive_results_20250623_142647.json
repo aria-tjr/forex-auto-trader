@@ -1,0 +1,44 @@
+{
+  "final_balance": 9999.421215569178,
+  "total_return": -5.787844308215426e-05,
+  "annual_return": -5.787844308213774e-05,
+  "max_drawdown": 0.00041130567019190495,
+  "sharpe_ratio": -0.6958885738949845,
+  "total_trades": 4,
+  "win_rate": 0.5,
+  "profit_factor": 0.910521573559208,
+  "avg_win": 0.014669397320748873,
+  "avg_loss": 0.01611098270127366,
+  "avg_win_dollar": 2.9330086618862534,
+  "avg_loss_dollar": 3.2224008772981305,
+  "avg_total_cost": 0.0066,
+  "signals_generated": 5,
+  "signal_to_trade_ratio": 0.8,
+  "regime_changes": 0,
+  "regime_changes_per_day": 0.0,
+  "regime_performance": {
+    "flash_crash": {
+      "trades": 2,
+      "avg_return": -0.01611098270127366,
+      "win_rate": 0.0
+    },
+    "luna_collapse": {
+      "trades": 2,
+      "avg_return": 0.014669397320748873,
+      "win_rate": 1.0
+    }
+  },
+  "statistical_significance": {
+    "sufficient_trades": false,
+    "confidence_level": "LOW",
+    "trades_required": 100,
+    "trades_available": 4
+  },
+  "critical_issues_remaining": 2,
+  "ready_for_live_trading": false,
+  "test_period_days": 365,
+  "data_points": 35040,
+  "crash_periods_included": true,
+  "realistic_costs_applied": true,
+  "regime_stability_applied": true
+}

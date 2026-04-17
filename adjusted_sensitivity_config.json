@@ -1,0 +1,330 @@
+{
+  "strategy_config": {
+    "name": "Adjusted Sensitivity Enhanced Strategy",
+    "version": "2.0",
+    "description": "Professional crypto trading strategy with adjusted sensitivity for statistical significance",
+    "target_trades": 100,
+    "target_confidence": "HIGH"
+  },
+  
+  "sensitivity_levels": {
+    "conservative": {
+      "signal_threshold": 0.70,
+      "min_confirmations": 3,
+      "cooldown_periods": 5,
+      "regime_stability": 10,
+      "description": "High quality signals, fewer trades (~50-70 trades/year)",
+      "expected_trades_per_year": 60
+    },
+    
+    "balanced": {
+      "signal_threshold": 0.60,
+      "min_confirmations": 2,
+      "cooldown_periods": 4,
+      "regime_stability": 8,
+      "description": "Balanced quality vs quantity (~80-120 trades/year)",
+      "expected_trades_per_year": 100
+    },
+    
+    "aggressive": {
+      "signal_threshold": 0.50,
+      "min_confirmations": 2,
+      "cooldown_periods": 3,
+      "regime_stability": 6,
+      "description": "More trades with good signals (~120-180 trades/year)",
+      "expected_trades_per_year": 150
+    },
+    
+    "very_aggressive": {
+      "signal_threshold": 0.40,
+      "min_confirmations": 1,
+      "cooldown_periods": 2,
+      "regime_stability": 5,
+      "description": "Maximum trades while maintaining edge (~180-250 trades/year)",
+      "expected_trades_per_year": 220
+    }
+  },
+  
+  "timeframe_optimization": {
+    "5m": {
+      "pros": ["Maximum trade opportunities", "Quick signal response", "Good for scalping"],
+      "cons": ["Higher noise", "More execution costs", "Requires constant monitoring"],
+      "best_sensitivity": "aggressive",
+      "expected_trades_multiplier": 3.0
+    },
+    
+    "15m": {
+      "pros": ["Good signal quality", "Manageable trade frequency", "Lower noise"],
+      "cons": ["Moderate execution costs", "Some lag in signals"],
+      "best_sensitivity": "balanced",
+      "expected_trades_multiplier": 2.0
+    },
+    
+    "30m": {
+      "pros": ["High signal quality", "Lower execution costs", "Good for part-time trading"],
+      "cons": ["Fewer opportunities", "Signal lag"],
+      "best_sensitivity": "aggressive",
+      "expected_trades_multiplier": 1.5
+    },
+    
+    "1h": {
+      "pros": ["Highest signal quality", "Lowest execution costs", "Easy to manage"],
+      "cons": ["Limited opportunities", "Significant signal lag"],
+      "best_sensitivity": "very_aggressive",
+      "expected_trades_multiplier": 1.0
+    }
+  },
+  
+  "technical_indicators": {
+    "ema_fast": {
+      "period": 12,
+      "weight": 0.25,
+      "description": "Fast EMA for trend detection"
+    },
+    
+    "ema_medium": {
+      "period": 26,
+      "weight": 0.20,
+      "description": "Medium EMA for trend confirmation"
+    },
+    
+    "ema_slow": {
+      "period": 50,
+      "weight": 0.15,
+      "description": "Slow EMA for major trend"
+    },
+    
+    "rsi": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "weight": 0.20,
+      "description": "Momentum oscillator"
+    },
+    
+    "bollinger_bands": {
+      "period": 20,
+      "std_dev": 2.0,
+      "weight": 0.20,
+      "description": "Volatility-based bands"
+    }
+  },
+  
+  "signal_generation": {
+    "signal_types": {
+      "ema_crossover": {
+        "weight": 0.30,
+        "description": "EMA 12/26 crossover",
+        "min_strength": 0.6
+      },
+      
+      "trend_momentum": {
+        "weight": 0.25,
+        "description": "Combined EMA trend + RSI momentum",
+        "min_strength": 0.5
+      },
+      
+      "volatility_breakout": {
+        "weight": 0.25,
+        "description": "Bollinger Band breakouts",
+        "min_strength": 0.55
+      },
+      
+      "confluence_zone": {
+        "weight": 0.20,
+        "description": "Multiple indicator confluence",
+        "min_strength": 0.7
+      }
+    },
+    
+    "confirmation_requirements": {
+      "conservative": {
+        "min_indicators_aligned": 3,
+        "min_total_strength": 2.1,
+        "max_conflicting_signals": 0
+      },
+      
+      "balanced": {
+        "min_indicators_aligned": 2,
+        "min_total_strength": 1.5,
+        "max_conflicting_signals": 1
+      },
+      
+      "aggressive": {
+        "min_indicators_aligned": 2,
+        "min_total_strength": 1.2,
+        "max_conflicting_signals": 1
+      },
+      
+      "very_aggressive": {
+        "min_indicators_aligned": 1,
+        "min_total_strength": 0.8,
+        "max_conflicting_signals": 2
+      }
+    }
+  },
+  
+  "risk_management": {
+    "position_sizing": {
+      "base_risk_per_trade": 0.02,
+      "max_risk_per_trade": 0.03,
+      "daily_loss_limit": 0.08,
+      "max_open_positions": 1
+    },
+    
+    "stop_losses": {
+      "conservative": {
+        "stop_loss_pct": 0.025,
+        "take_profit_ratio": 2.5
+      },
+      
+      "balanced": {
+        "stop_loss_pct": 0.03,
+        "take_profit_ratio": 2.0
+      },
+      
+      "aggressive": {
+        "stop_loss_pct": 0.035,
+        "take_profit_ratio": 1.8
+      },
+      
+      "very_aggressive": {
+        "stop_loss_pct": 0.04,
+        "take_profit_ratio": 1.5
+      }
+    }
+  },
+  
+  "execution_costs": {
+    "maker_fee": 0.001,
+    "taker_fee": 0.0015,
+    "slippage_base": 0.0005,
+    "slippage_volatility_factor": 1.5,
+    "spread_percentage": 0.0002,
+    "emergency_exit_penalty": 0.002
+  },
+  
+  "market_regimes": {
+    "detection_method": "volatility_and_trend",
+    "stability_filter": {
+      "conservative": 10,
+      "balanced": 8,
+      "aggressive": 6,
+      "very_aggressive": 5
+    },
+    
+    "regime_types": {
+      "bull_trend": {
+        "characteristics": ["Strong uptrend", "Low volatility", "High volume"],
+        "signal_adjustment": 1.1
+      },
+      
+      "bear_trend": {
+        "characteristics": ["Strong downtrend", "Medium volatility", "High volume"],
+        "signal_adjustment": 1.0
+      },
+      
+      "sideways": {
+        "characteristics": ["No clear trend", "Low volatility", "Medium volume"],
+        "signal_adjustment": 0.8
+      },
+      
+      "high_volatility": {
+        "characteristics": ["High volatility", "Unpredictable direction", "Variable volume"],
+        "signal_adjustment": 0.6
+      }
+    }
+  },
+  
+  "backtesting_parameters": {
+    "test_periods": {
+      "short_term": {
+        "days": 365,
+        "description": "1 year for quick validation"
+      },
+      
+      "medium_term": {
+        "days": 730,
+        "description": "2 years for statistical significance"
+      },
+      
+      "long_term": {
+        "days": 1095,
+        "description": "3 years for high confidence"
+      }
+    },
+    
+    "validation_requirements": {
+      "minimum_trades": 100,
+      "high_confidence_trades": 200,
+      "min_win_rate": 0.40,
+      "min_profit_factor": 1.1,
+      "max_drawdown": 0.25,
+      "target_sharpe": 1.0
+    }
+  },
+  
+  "live_trading_guidelines": {
+    "paper_trading_period": {
+      "duration_weeks": 4,
+      "min_trades": 20,
+      "success_criteria": {
+        "performance_vs_backtest": 0.8,
+        "max_deviation": 0.15
+      }
+    },
+    
+    "position_sizing_progression": {
+      "phase_1": {
+        "weeks": "1-2",
+        "risk_per_trade": 0.005,
+        "description": "Ultra-conservative start"
+      },
+      
+      "phase_2": {
+        "weeks": "3-6",
+        "risk_per_trade": 0.01,
+        "description": "Conservative growth"
+      },
+      
+      "phase_3": {
+        "weeks": "7-12",
+        "risk_per_trade": 0.015,
+        "description": "Moderate sizing"
+      },
+      
+      "phase_4": {
+        "weeks": "13+",
+        "risk_per_trade": 0.02,
+        "description": "Full backtest sizing"
+      }
+    }
+  },
+  
+  "optimization_targets": {
+    "primary": {
+      "metric": "total_trades",
+      "target": 100,
+      "weight": 0.3
+    },
+    
+    "secondary": {
+      "metric": "annual_return",
+      "target": 0.15,
+      "weight": 0.25
+    },
+    
+    "tertiary": {
+      "metric": "sharpe_ratio",
+      "target": 1.0,
+      "weight": 0.25
+    },
+    
+    "risk": {
+      "metric": "max_drawdown",
+      "target": 0.20,
+      "weight": 0.20,
+      "direction": "minimize"
+    }
+  }
+} 
