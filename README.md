@@ -7,13 +7,15 @@ This is a production-ready auto trading bot that uses a **simplified robust stra
 ### ✅ **Key Features**
 
 - **Anti-Overfitting Design**: Only 6 parameters vs 15+ in complex strategies
-- **Realistic Performance**: 10.69% annual return with 69.8% win rate
+- **Performance**: see the note below — the figures in this README come from simulated data
 - **Robust Risk Management**: 1% risk per trade, 5% daily loss limit
 - **Real-time Trading**: Live signal generation and execution
 - **MT5 Integration**: Native MetaTrader 5 support
 - **Comprehensive Logging**: Full audit trail of all trades
 
-### 📊 **Strategy Performance (Validated)**
+### 📊 Strategy Performance (simulated data — not validated on real markets)
+
+> ⚠️ The table below was produced by backtest scripts in this repo that **generate synthetic random price data** (e.g. `realistic_backtest.py` and `crypto_backtest.py` use `np.random`). It is **not** evidence of real-market performance.
 
 | Metric | Value | Status |
 |--------|-------|--------|
@@ -216,12 +218,16 @@ For issues or questions:
 
 This strategy has been thoroughly tested to eliminate overfitting:
 
-### ✅ Validation Results
+### Independent real-data check (crypto mode)
 
-- **Time-Series Validation**: Tested across multiple periods
-- **Cross-Asset Testing**: Validated on multiple currency pairs  
-- **Walk-Forward Analysis**: Consistent performance over time
-- **Noise Robustness**: Stable under market noise conditions
+An independent walk-forward backtest of `SimplifiedRobustStrategy` with the crypto defaults (15m, 3% stop / 6% target, long and short) on Binance BTCUSDT/ETHUSDT futures data, Apr–Sep 2026, 1x, 0.04% fee per side:
+
+| Symbol | Trades | Win rate | Net return | Max DD |
+|---|---|---|---|---|
+| BTCUSDT | 36 | 25.0% | −29.6% | −37.3% |
+| ETHUSDT | 60 | 26.7% | −39.4% | −54.0% |
+
+MT5/forex mode was not tested. Funding and slippage were not modelled.
 
 ### 🎯 Why This Strategy Works
 
