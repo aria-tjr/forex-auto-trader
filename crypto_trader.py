@@ -66,6 +66,9 @@ class CryptoAutoTrader:
         # Trading state
         self.is_running = False
         self.symbols = self.config.get('symbols', ['BTCUSDT', 'ETHUSDT', 'ADAUSDT'])
+        # One strategy instance per symbol, so price histories are not mixed across symbols
+        self.strategies = {sym: SimplifiedRobustStrategy() for sym in self.symbols}
+        self._last_bar_open = {}
         self.timeframe = self.config.get('timeframe', '15m')  # Binance format
         self.check_interval = self.config.get('check_interval', 30)  # Faster for crypto
         
@@ -173,16 +176,21 @@ class CryptoAutoTrader:
         """Get latest price data for crypto symbol"""
         try:
             # Get the latest kline data
+            # limit=2: klines[-1] is the still-forming candle, klines[-2] is the last CLOSED one.
+            # Only closed candles are fed to the strategy, each exactly once.
             klines = self.client.get_klines(
                 symbol=symbol,
                 interval=self.timeframe,
-                limit=1
+                limit=2
             )
             
-            if not klines:
+            if not klines or len(klines) < 2:
                 return None
             
-            kline = klines[0]
+            kline = klines[-2]
+            if self._last_bar_open.get(symbol) == kline[0]:
+                return None  # already processed this closed candle
+            self._last_bar_open[symbol] = kline[0]
             return PriceData(
                 timestamp=datetime.fromtimestamp(kline[0] / 1000),
                 open=float(kline[1]),
@@ -390,7 +398,7 @@ class CryptoAutoTrader:
                                 continue
                             
                             # Generate signal
-                            signal = self.strategy.add_price_data(price_data)
+                            signal = self.strategies[symbol].add_price_data(price_data)
                             
                             if signal and signal.direction != 'NEUTRAL':
                                 self.logger.info(f"📈 Signal: {signal.direction} for {symbol} (strength: {signal.strength:.2f})")

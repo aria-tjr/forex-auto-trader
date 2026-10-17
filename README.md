@@ -2,27 +2,29 @@
 
 ## Overview
 
-This is a production-ready auto trading bot that uses a **simplified robust strategy** designed to avoid overfitting and provide realistic, sustainable returns.
+An experimental auto trading bot (MT5 forex + a Binance crypto mode) built around a **simplified robust strategy** designed to limit overfitting. It has not shown real-market profitability (see below).
 
 ### ✅ **Key Features**
 
 - **Anti-Overfitting Design**: Only 6 parameters vs 15+ in complex strategies
-- **Realistic Performance**: 10.69% annual return with 69.8% win rate
+- **Performance**: see the note below — the figures in this README come from simulated data
 - **Robust Risk Management**: 1% risk per trade, 5% daily loss limit
 - **Real-time Trading**: Live signal generation and execution
 - **MT5 Integration**: Native MetaTrader 5 support
 - **Comprehensive Logging**: Full audit trail of all trades
 
-### 📊 **Strategy Performance (Validated)**
+### 📊 Strategy Performance (simulated data — not validated on real markets)
+
+> ⚠️ These figures cannot be reproduced from real market data with this repo: every backtest script here (e.g. `realistic_backtest.py`, `crypto_backtest.py`, `quick_backtest.py`) **generates synthetic random price data**, and no results file contains them. Treat them as simulated, **not** as evidence of real-market performance.
 
 | Metric | Value | Status |
 |--------|-------|--------|
-| **Annual Return** | 10.69% | ✅ Realistic |
-| **Win Rate** | 69.8% | ✅ Achievable |
-| **Total Trades** | 116/year | ✅ Active |
-| **Profit Factor** | 1.36 | ✅ Sustainable |
-| **Max Drawdown** | 25.95% | ✅ Honest |
-| **Sharpe Ratio** | 0.11 | ✅ Positive |
+| **Annual Return** | 10.69% | simulated |
+| **Win Rate** | 69.8% | simulated |
+| **Total Trades** | 116/year | simulated |
+| **Profit Factor** | 1.36 | simulated |
+| **Max Drawdown** | 25.95% | simulated |
+| **Sharpe Ratio** | 0.11 | simulated |
 
 ## 🚀 Quick Start
 
@@ -216,12 +218,16 @@ For issues or questions:
 
 This strategy has been thoroughly tested to eliminate overfitting:
 
-### ✅ Validation Results
+### Independent real-data check (crypto mode)
 
-- **Time-Series Validation**: Tested across multiple periods
-- **Cross-Asset Testing**: Validated on multiple currency pairs  
-- **Walk-Forward Analysis**: Consistent performance over time
-- **Noise Robustness**: Stable under market noise conditions
+An independent walk-forward backtest of `SimplifiedRobustStrategy` with the crypto defaults (15m, 3% stop / 6% target, long and short) on Binance BTCUSDT/ETHUSDT futures data, Apr–Sep 2026, 1x, 0.04% fee per side:
+
+| Symbol | Trades | Win rate | Net return | Max DD |
+|---|---|---|---|---|
+| BTCUSDT | 36 | 25.0% | −29.6% | −37.3% |
+| ETHUSDT | 60 | 26.7% | −39.4% | −54.0% |
+
+MT5/forex mode was not tested. Funding and slippage were not modelled.
 
 ### 🎯 Why This Strategy Works
 
@@ -234,7 +240,7 @@ This strategy has been thoroughly tested to eliminate overfitting:
 
 ## 🎉 Ready for Live Trading
 
-This simplified robust strategy is **production-ready** and designed for real-world deployment. Start with demo trading and gradually scale up as you gain confidence.
+This strategy is experimental. Use demo accounts only; the independent real-data check above was negative.
 
 **Happy Trading! 🚀** 
 ## ⚠️ Disclaimer
