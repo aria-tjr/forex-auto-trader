@@ -15,7 +15,7 @@ An experimental auto trading bot (MT5 forex + a Binance crypto mode) built aroun
 
 ### 📊 Strategy Performance (simulated data — not validated on real markets)
 
-> ⚠️ The table below was produced by backtest scripts in this repo that **generate synthetic random price data** (e.g. `realistic_backtest.py` and `crypto_backtest.py` use `np.random`). It is **not** evidence of real-market performance.
+> ⚠️ These figures cannot be reproduced from real market data with this repo: every backtest script here (e.g. `realistic_backtest.py`, `crypto_backtest.py`, `quick_backtest.py`) **generates synthetic random price data**, and no results file contains them. Treat them as simulated, **not** as evidence of real-market performance.
 
 | Metric | Value | Status |
 |--------|-------|--------|
