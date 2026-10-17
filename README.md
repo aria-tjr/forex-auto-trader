@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a production-ready auto trading bot that uses a **simplified robust strategy** designed to avoid overfitting and provide realistic, sustainable returns.
+An experimental auto trading bot (MT5 forex + a Binance crypto mode) built around a **simplified robust strategy** designed to limit overfitting. It has not shown real-market profitability (see below).
 
 ### ✅ **Key Features**
 
@@ -19,12 +19,12 @@ This is a production-ready auto trading bot that uses a **simplified robust stra
 
 | Metric | Value | Status |
 |--------|-------|--------|
-| **Annual Return** | 10.69% | ✅ Realistic |
-| **Win Rate** | 69.8% | ✅ Achievable |
-| **Total Trades** | 116/year | ✅ Active |
-| **Profit Factor** | 1.36 | ✅ Sustainable |
-| **Max Drawdown** | 25.95% | ✅ Honest |
-| **Sharpe Ratio** | 0.11 | ✅ Positive |
+| **Annual Return** | 10.69% | simulated |
+| **Win Rate** | 69.8% | simulated |
+| **Total Trades** | 116/year | simulated |
+| **Profit Factor** | 1.36 | simulated |
+| **Max Drawdown** | 25.95% | simulated |
+| **Sharpe Ratio** | 0.11 | simulated |
 
 ## 🚀 Quick Start
 
@@ -240,7 +240,7 @@ MT5/forex mode was not tested. Funding and slippage were not modelled.
 
 ## 🎉 Ready for Live Trading
 
-This simplified robust strategy is **production-ready** and designed for real-world deployment. Start with demo trading and gradually scale up as you gain confidence.
+This strategy is experimental. Use demo accounts only; the independent real-data check above was negative.
 
 **Happy Trading! 🚀** 
 ## ⚠️ Disclaimer
